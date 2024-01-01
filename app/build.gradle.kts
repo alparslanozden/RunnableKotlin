@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.aaozden.runnablekotlin"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.aaozden.runnablekotlin"
@@ -33,6 +33,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures{
+        viewBinding= true
+    }
+
 }
 
 dependencies {
