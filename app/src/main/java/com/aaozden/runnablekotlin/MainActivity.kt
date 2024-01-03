@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         runnable= object : Runnable{
             override fun run() {
                 number= number +1
-                binding.textView.text = "Time ${number}"
+                binding.textView.text = "Time: ${number}"
 
                 handler.postDelayed(runnable,1000)
             }
